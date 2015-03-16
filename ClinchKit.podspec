@@ -8,6 +8,7 @@ Pod::Spec.new do |s|
   s.authors = { "Damien Glancy" => "damien@clinch.io", "Steve Quinlan" => "steve@clinch.io" }
   s.social_media_url = "http://twitter.com/clinch"
   s.source = { :git => 'https://github.com/ClinchIO/ClinchKit.git', :tag => s.version.to_s }
+  s.requires_arc = true
    
   s.platform = :ios, '8.0'
   s.ios.platform = :ios, '8.0'
