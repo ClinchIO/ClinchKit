@@ -1,0 +1,10 @@
+framework module ClinchKit {
+  umbrella header "ClinchKit.h"
+
+  export *
+  module * { export * }
+}
+
+module ClinchKit.Swift {
+    header "ClinchKit-Swift.h"
+}
