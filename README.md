@@ -10,7 +10,7 @@ Add the ClinchKit pod into your Podfile and run a `pod install` or `pod update` 
 		
 
 ### Initialize ClinchKit
-You'll need your ClinchKit app id and api key that can be requested from [support@clinch.io](support@clinch.io). Once you've your keys, initialize ClinchKit be calling the following in your application's delegate.
+You'll need your ClinchKit app id and api key that can be requested from [support@clinch.io](support@clinch.io). Once you've your keys, initialize ClinchKit by calling the following in your application's delegate.
 
 	ClinchKit.setApiKey(key: "<#your_api_key#>")
 	ClinchKit.setApiSecret(secret: "<#your_api_secret#>")
