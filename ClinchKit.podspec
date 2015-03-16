@@ -9,10 +9,8 @@ Pod::Spec.new do |s|
   s.social_media_url = "http://twitter.com/clinch"
   s.source = { :git => 'https://github.com/ClinchIO/ClinchKit.git', :tag => s.version.to_s }
    
-  s.platform     = :ios, "8.0"
-  s.ios.platform = :ios, '7.0'
-  s.ios.preserve_paths = 'Clinch.framework'
-  s.ios.public_header_files = 'Clinch.framework/Headers/*.h'
-  s.ios.vendored_frameworks = 'Clinch.framework'
-
+  s.ios.platform = :ios, '8.0'
+  s.ios.preserve_paths = 'ClinchKit.framework'
+  s.ios.public_header_files = 'ClinchKit.framework/Headers/*.h'
+  s.ios.vendored_frameworks = 'ClinchKit.framework'
 end
