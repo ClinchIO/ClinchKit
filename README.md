@@ -60,9 +60,19 @@ To show an application form for a specific job in your company:
 
 ### Push Notifications
 
-ClinchKit supports push notifications to notify your apps users of important events, such as, new job positions. To register a device for push notifications, place the following in your `didRegisterForRemoteNotificationsWithDeviceToken` call in your application delegate:
+ClinchKit supports push notifications to notify your users of important events, such as, new job positions. To register a device for push notifications, place the following in your `didRegisterForRemoteNotificationsWithDeviceToken` call in your application delegate:
 
 	ClinchKit.setDeviceToken(token: <#deviceToken#>)
+
+### Branding
+
+To set a branding tint color for ClinchKit UI components:
+
+	ClinchKit.setTintColor(color: <#UIColor#>)
+
+To set a branding logo (max size: 300px x 300px):
+
+	ClinchKit.setLogo(logo: <#UIImage#>)
 
 ### Support
 
