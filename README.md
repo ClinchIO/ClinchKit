@@ -19,7 +19,9 @@ Add the ClinchKit pod into your Podfile and run a `pod install` or `pod update` 
 		pod `ClinchKit`
 		
 
-Note: There is an current issue with CocoaPods and dynamic binary frameworks (of which ClinchKit) is one. (See [https://github.com/CocoaPods/CocoaPods/issues/1993](https://github.com/CocoaPods/CocoaPods/issues/1993) and [https://github.com/CocoaPods/CocoaPods/issues/3277](https://github.com/CocoaPods/CocoaPods/issues/3277) for more info). Until this works, you'll be better off using the manual installation method.
+__Note:__ There is an current issue with CocoaPods and dynamic binary frameworks (of which ClinchKit) is one. (See [https://github.com/CocoaPods/CocoaPods/issues/1993](https://github.com/CocoaPods/CocoaPods/issues/1993) and [https://github.com/CocoaPods/CocoaPods/issues/3277](https://github.com/CocoaPods/CocoaPods/issues/3277) for more info). 
+
+Until this works, you'll be better off using the manual installation method.
 
 ### Initialize ClinchKit
 
