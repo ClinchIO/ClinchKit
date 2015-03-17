@@ -45,6 +45,17 @@ ClinchKit supports push notifications to notify your apps users of important eve
 
 	ClinchKit.setDeviceToken(token: <#deviceToken#>)
 
+### Show Application Forms
+
+To show an application form for your company (apply to company and not a specific job):
+
+	ClinchKit.showApplicationForm(job: nil)
+
+To show an application form for a specific job in your company:
+
+	ClinchKit.showApplicationForm(job: '<#job_slug#>')
+
+
 ### Support
 
 If you have any questions or queries, support is just an email (or in-app request) away at [support@clinch.io](support@clinch.io)
