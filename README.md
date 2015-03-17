@@ -1,15 +1,26 @@
 ## Requirements
+
 The Clinch iOS SDK supports iOS 8.x.
 
 ## Installation
 
 ### CocoaPods
+
 Add the ClinchKit pod into your Podfile and run a `pod install` or `pod update` command.
 
 		pod `ClinchKit`
 		
 
+### Manual Installation 
+
+1. Add the `ClinchKit.framework` to your Xcode project (you can get it from [GitHub](https://github.com/ClinchIO/ClinchKit/tree/master)).
+
+2. Add `ClinchKit.framework` to the `Embedded Binaries` section in your application target. You'll find `Embedded Binaries` in the `General` section of the target.
+
+3. Make sure you are linking the following frameworks: `CoreData`
+
 ### Initialize ClinchKit
+
 You'll need your ClinchKit app id and api key that can be requested from [support@clinch.io](support@clinch.io). Once you've your keys, initialize ClinchKit by calling the following in your application's delegate.
 
 	ClinchKit.setApiKey(key: "<#your_api_key#>")
