@@ -6,11 +6,11 @@ The Clinch iOS SDK supports iOS 8.x.
 
 ### Manual Installation 
 
-1. Add the `ClinchKit.framework` to your Xcode project (you can get it from [GitHub](https://github.com/ClinchIO/ClinchKit/tree/master)).
+1. Copy the `ClinchKit.framework` to your Xcode project (you can get it from [GitHub](https://github.com/ClinchIO/ClinchKit/tree/master)).
 
 2. Add `ClinchKit.framework` to the `Embedded Binaries` section in your application target. You'll find `Embedded Binaries` in the `General` section of the target.
 
-3. Make sure you are linking the following frameworks: `CoreData`
+3. Link to the following frameworks: `CoreData`
 
 ### CocoaPods
 
@@ -19,7 +19,7 @@ Add the ClinchKit pod into your Podfile and run a `pod install` or `pod update` 
 		pod `ClinchKit`
 		
 
-__Note:__ There is an current issue with CocoaPods and dynamic binary frameworks (of which ClinchKit) is one. (See [https://github.com/CocoaPods/CocoaPods/issues/1993](https://github.com/CocoaPods/CocoaPods/issues/1993) and [https://github.com/CocoaPods/CocoaPods/issues/3277](https://github.com/CocoaPods/CocoaPods/issues/3277) for more info). 
+__Note:__ _There is an current issue with CocoaPods and dynamic binary frameworks (of which ClinchKit) is one. (See [https://github.com/CocoaPods/CocoaPods/issues/1993](https://github.com/CocoaPods/CocoaPods/issues/1993) and [https://github.com/CocoaPods/CocoaPods/issues/3277](https://github.com/CocoaPods/CocoaPods/issues/3277) for more info)._ 
 
 Until this works, you'll be better off using the manual installation method.
 
@@ -54,7 +54,7 @@ or if you don't know their email address, via a unique identifier:
 
 ### Show Application Forms
 
-To show an application form for your company (apply to company and not a specific job):
+To show an application form for your company (apply directly to company and not a specific job):
 
 	ClinchKit.showApplicationForm(job: nil)
 
@@ -67,6 +67,14 @@ To show an application form for a specific job in your company:
 ClinchKit supports push notifications to notify your users of important events, such as, new job positions. To register a device for push notifications, place the following in your `didRegisterForRemoteNotificationsWithDeviceToken` call in your application delegate:
 
 	ClinchKit.setDeviceToken(token: <#deviceToken#>)
+
+### iBeacons Support
+
+ClinchKit supports iBeacon's to attract candidates in a unique way from your mobile app users population. Beacons show up as a channel within your Clinch web console, where they can be configured.
+
+To enable iBeacon support:
+
+	ClinchKit.enableBeaconSupport()
 
 ### Branding
 

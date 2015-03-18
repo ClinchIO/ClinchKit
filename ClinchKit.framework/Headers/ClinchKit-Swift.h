@@ -85,6 +85,17 @@ SWIFT_CLASS("BaseEntity")
 - (instancetype)initWithEntity:(NSEntityDescription *)entity insertIntoManagedObjectContext:(NSManagedObjectContext *)context OBJC_DESIGNATED_INITIALIZER;
 @end
 
+@class NSNumber;
+
+SWIFT_CLASS("Beacon")
+@interface Beacon : BaseEntity
+@property (nonatomic, copy) NSString * proximityUUID;
+@property (nonatomic, copy) NSString * name;
+@property (nonatomic) NSNumber * major;
+@property (nonatomic) NSNumber * minor;
+- (instancetype)initWithEntity:(NSEntityDescription *)entity insertIntoManagedObjectContext:(NSManagedObjectContext *)context OBJC_DESIGNATED_INITIALIZER;
+@end
+
 @class NSSet;
 @class SocialProfile;
 
@@ -144,6 +155,8 @@ SWIFT_PROTOCOL("_TtP9ClinchKit17ClinchKitDelegate_")
 - (void)networkErrorResponseCodeReceived:(NSInteger)code response:(NSHTTPURLResponse *)response;
 - (void)networkActivityDidStart;
 - (void)networkActivityDidFinish;
+- (void)userDidEnterRegion:(NSString *)user beacon:(Beacon *)beacon;
+- (void)userDidLeaveRegion:(NSString *)user beacon:(Beacon *)beacon;
 @end
 
 
@@ -187,12 +200,12 @@ SWIFT_CLASS("Job")
 
 
 @interface NSURLRequest (SWIFT_EXTENSION(ClinchKit))
-@property (nonatomic, readonly) NSURLRequest * URLRequest;
+@property (nonatomic, readonly, copy) NSString * URLString;
 @end
 
 
 @interface NSURLRequest (SWIFT_EXTENSION(ClinchKit))
-@property (nonatomic, readonly, copy) NSString * URLString;
+@property (nonatomic, readonly) NSURLRequest * URLRequest;
 @end
 
 
