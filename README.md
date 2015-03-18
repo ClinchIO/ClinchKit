@@ -12,14 +12,15 @@ The Clinch iOS SDK supports iOS 8.x.
 
 3. Link to the following frameworks: `CoreData`
 
+4. If you plan on using the built-in iBeacons support, link to the `CoreLocation` framework.
+
 ### CocoaPods
 
 Add the ClinchKit pod into your Podfile and run a `pod install` or `pod update` command.
 
 		pod `ClinchKit`
-		
 
-__Note:__ _There is an current issue with CocoaPods and dynamic binary frameworks (of which ClinchKit) is one. (See [https://github.com/CocoaPods/CocoaPods/issues/1993](https://github.com/CocoaPods/CocoaPods/issues/1993) and [https://github.com/CocoaPods/CocoaPods/issues/3277](https://github.com/CocoaPods/CocoaPods/issues/3277) for more info)._ 
+__Note:__ _There is an issue with CocoaPods and dynamic binary frameworks; of which ClinchKit is one. (See [https://github.com/CocoaPods/CocoaPods/issues/1993](https://github.com/CocoaPods/CocoaPods/issues/1993) and [https://github.com/CocoaPods/CocoaPods/issues/3277](https://github.com/CocoaPods/CocoaPods/issues/3277) for more info)._ 
 
 Until this works, you'll be better off using the manual installation method.
 
