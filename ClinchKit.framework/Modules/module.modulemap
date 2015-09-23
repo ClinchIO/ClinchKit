@@ -4,7 +4,3 @@ framework module ClinchKit {
   export *
   module * { export * }
 }
-
-module ClinchKit.Swift {
-    header "ClinchKit-Swift.h"
-}
