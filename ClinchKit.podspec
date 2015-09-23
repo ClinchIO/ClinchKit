@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name = "ClinchKit"
-  s.version = "1.0.1"
+  s.version = "1.0"
   s.summary = "The Clinch iOS SDK, for integrating Clinch into your iOS application"
   s.description = 'The Clinch iOS SDK, for integrating Clinch into your iOS application. The SDK supports iOS 8.'
   s.homepage = "https://github.com/ClinchIO/ClinchKit"
